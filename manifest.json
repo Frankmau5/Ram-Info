@@ -1,0 +1,16 @@
+{
+"name": "Ram Info",
+"description": "A Chrome Extension to see RAM and CPU Info",
+"version": "1.1.0",
+"manifest_version": 3,
+
+"background": {
+   "service_worker": "background.js"
+ },
+ "permissions": ["system.memory" ,"system.cpu"],
+
+ "action": {
+   "default_popup": "index.html"
+ }
+
+}

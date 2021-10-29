@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ram Info</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="jquery-3.2.1.slim.min.js" ></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div id="Main" class="container" style="background-color: #a0c4ff">
+      <div class="jumbotron" style="background-color: #a0c4ff">
+        <h1 class="display-4">Ram Info</h1>
+        <p class="lead">A Chrome Extension to see RAM and CPU Info</p>
+        <hr class="my-4">
+        </p>
+      </div>
+
+      <div id="Ram" class="container" style="background-color: #caffbf">
+        <div id="Capacity"></div>
+        <div id="CapacityFree"></div>
+        <div id="CapacityUsed"></div>
+        <canvas id="RamChart"></canvas>
+      </div>
+      <br/>
+      <div id="Cpu" class="container" style="background-color: #ffd6a5">
+        <div id="ArchName"></div>
+        <div id="Features"></div>
+        <div id="modelName"></div>
+        <div id="numOfProcessors"></div>
+        <div id="processors"></div>
+        <canvas id="CPUChart"></canvas>
+      </div>
+    </div>
+    <footer id="footer" class="container" style="background-color: #a0c4ff">
+      <br/>
+    </footer>
+    <script type="text/javascript" src="charts.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
